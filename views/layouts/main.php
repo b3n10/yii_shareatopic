@@ -11,6 +11,9 @@ use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
 AppAsset::register($this);
+
+// change app name
+Yii::$app->name = "Share a topic";
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -69,7 +72,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; LetsDoThis <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
