@@ -1,9 +1,9 @@
 #!/bin/bash
 
-apt update && apt upgrade && apt autoremove -y
+apt update && apt upgrade -y && apt autoremove -y
 
 apt install libfreetype6-dev -y
 
-docker-php-ext-install pdo_mysql calendar gd
+docker-php-ext-install pdo pdo_mysql calendar gd
 
 docker-php-ext-configure gd --with-freetype
