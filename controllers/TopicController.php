@@ -24,7 +24,7 @@ class TopicController extends Controller
         $query = Topic::find();
 
         $pagination = new Pagination([
-            'defaultPageSize' => 1,
+            'defaultPageSize' => 20,
             'totalCount' => $query->count()
         ]);
 
