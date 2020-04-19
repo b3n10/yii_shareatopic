@@ -8,4 +8,4 @@ CREATE TABLE `topic` (
   `comments` VARCHAR(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `topic` VALUES (NULL, "what's your favorite cartoon?",'gori', 12, NOW(), "{'1':'batmans'}");
+INSERT INTO `topic` VALUES (NULL, "what's your favorite cartoon?", "you know the drill", 'gori', 12, NOW(), "{'1':'batmans'}");
